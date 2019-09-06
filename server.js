@@ -50,7 +50,7 @@ app.use('/api/v1/auth', routes.auth);
 app.use('/api/v1/users', routes.users);
 
 // Post Route
-// app.use('/api/v1/posts', routes.posts);
+app.use('/api/v1/posts', routes.posts);
 
 // -------------------------- START SERVER -------------------------- //
 

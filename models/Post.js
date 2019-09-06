@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const runSchema = new Schema({
-  User: {
+const postSchema = new Schema({
+  user: {
     type: Schema.Types.ObjectId,
     ref: 'User'
   },
@@ -15,12 +15,12 @@ const runSchema = new Schema({
   location: {
     type: String,
   },
-  run_date: {
+  post_date: {
     type: Date,
     default: Date.now
   },
 });
 
-const Run = mongoose.model('Run', runSchema);
+const Post = mongoose.model('Post', postSchema);
 
-module.exports = Run;
+module.exports = Post;

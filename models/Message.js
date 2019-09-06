@@ -6,9 +6,9 @@ const messageSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'User'
   },
-  Run: {
+  Post: {
     type: Schema.Types.ObjectId,
-    ref: 'Run'
+    ref: 'Post'
   },
   comment: {
     type: String,
