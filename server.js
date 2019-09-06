@@ -49,6 +49,9 @@ app.use('/api/v1/auth', routes.auth);
 // User Routes
 app.use('/api/v1/users', routes.users);
 
+// Post Route
+// app.use('/api/v1/posts', routes.posts);
+
 // -------------------------- START SERVER -------------------------- //
 
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
