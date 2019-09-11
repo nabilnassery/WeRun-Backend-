@@ -29,6 +29,7 @@ const register = (req, res) => {
           username: req.body.username,
           email: req.body.email,
           password: hash,
+          avatar: req.body.avatar,
         }
 
         db.User.create(newUser, (err, savedUser) => {

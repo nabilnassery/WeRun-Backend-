@@ -52,6 +52,9 @@ app.use('/api/v1/users', routes.users);
 // Post Route
 app.use('/api/v1/posts', routes.posts);
 
+// Message Route
+app.use('/api/v1/posts/:id/messages', routes.messages);
+
 // -------------------------- START SERVER -------------------------- //
 
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));

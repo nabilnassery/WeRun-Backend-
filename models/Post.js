@@ -2,7 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const postSchema = new Schema({
-  user: {
+  username: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  },
+  avatar: {
     type: Schema.Types.ObjectId,
     ref: 'User'
   },
@@ -12,7 +16,16 @@ const postSchema = new Schema({
   distance: {
     type: String,
   },
+  // address: {
+  //     street: String,
+  //     suite: Number,
+  //     city: String,
+  //     zipcode: Number,
+  // },
   location: {
+    type: String,
+  },
+  picture: {
     type: String,
   },
   post_date: {
